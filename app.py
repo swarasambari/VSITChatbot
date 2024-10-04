@@ -5,6 +5,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import nltk
 from nltk.stem import WordNetLemmatizer
+import json
+
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -12,7 +14,10 @@ app = Flask(__name__)
 # Load model and other necessary files
 lemmatizer = WordNetLemmatizer()
 model = load_model('chatbot_model.h5')
-intents = pickle.load(open('intents.json', 'rb'))
+
+with open('intents.json', 'r') as file:
+    intents = json.load(file)
+
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 
