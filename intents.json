@@ -1,0 +1,404 @@
+{"intents": [
+        {
+                "tag": "vidyalankar_overview",
+                "patterns": ["What is Vidyalankar?", "Tell me about Vidyalankar", "What does Vidyalankar do?", "What type of institution is Vidyalankar?"],
+                "responses": ["Vidyalankar is an educational institution founded by Prof. C.S. Deshpande, focusing on quality education and overall development.", "It offers a variety of courses in engineering, management, and information technology."],
+                "context": [""]
+            },
+            {
+                "tag": "vidyalankar_mission",
+                "patterns": ["What is the mission of Vidyalankar?", "What are Vidyalankar's goals?", "What does Vidyalankar aim to achieve?", "Why was Vidyalankar established?"],
+                "responses": ["The mission of Vidyalankar is to impart knowledge and create global citizens who contribute to society.", "The institution aims to provide high-quality education and foster a love for learning."],
+                "context": [""]
+            },
+            {
+                "tag": "courses_details",
+                "patterns": ["What are the courses offered?", "Can you list the courses at Vidyalankar?", "What subjects can I study at Vidyalankar?", "Are there any specialized programs at Vidyalankar?" ],
+                "responses": ["Vidyalankar offers a variety of courses including B.Sc. in Information Technology, B.Sc. in Data Science, Bachelor of Management Studies, and various Master's degrees such as M.Sc. in Information Technology and M.Com in Banking & Finance."],
+                "context": [""]
+            },
+            {
+                "tag": "admissions_process",
+                "patterns": ["How can I apply for admission?", "What is the admission procedure?", "What are the requirements for admission?", "Is there an entrance exam for admission?"],
+                "responses": ["To apply for admission, candidates need to meet eligibility criteria and submit an application form as per the guidelines set by the institution.", "Entrance exams may be required depending on the course."],
+                "context": [""]
+            },
+            {
+                "tag": "faculty_experience",
+                "patterns": ["What qualifications do the faculty have?", "Are the teachers experienced?", "How qualified are the instructors at Vidyalankar?", "What is the teaching staff like at Vidyalankar?"],
+                "responses": ["The faculty at Vidyalankar comprises well-qualified and experienced professionals with expertise in their respective fields.", "Many instructors have industry experience and advanced degrees."],
+                "context": [""]
+            },
+            {
+                "tag": "extracurricular_activities",
+                "patterns": ["What extracurricular activities are available?", "Are there clubs at Vidyalankar?", "What can I do outside of classes?", "Is there a student council at Vidyalankar?"],
+                "responses": ["Vidyalankar offers various extracurricular activities including clubs, student councils, and events to promote holistic development.", "Students can participate in cultural, technical, and sports activities."],
+                "context": [""]
+            },
+            {
+                "tag": "internship_opportunities",
+                "patterns": ["Are there internships available for students?", "Does Vidyalankar help with internships?", "Can I get practical experience while studying?", "What internship programs are offered?"],
+                "responses": ["Vidyalankar provides students with internship opportunities to gain practical experience and apply their knowledge in real-world scenarios.", "The institution collaborates with various companies for placement and internship programs."],
+                "context": [""]
+            },
+            {
+                "tag": "student_support_services",
+                "patterns": ["What support services are available for students?", "Are there counseling services at Vidyalankar?", "How does Vidyalankar support student well-being?", "Is there academic support for students?"],
+                "responses": ["Vidyalankar offers various support services including academic counseling, career guidance, and mental health resources to assist students.", "The institution prioritizes student well-being and success."],
+                "context": [""]
+            },
+            {
+                "tag": "vsit_technology_facilities",
+                "patterns": ["What technology facilities does VSIT have?", "Are there labs for practical learning?", "Can I access computers at VSIT?", "What kind of tech support is available?"],
+                "responses": ["VSIT is equipped with modern technology facilities including computer labs, software tools, and learning resources for practical learning.", "Students have access to high-tech equipment and resources to enhance their education."],
+                "context": [""]
+            },
+            {
+                "tag": "vidyalankar_location",
+                "patterns": ["Where is Vidyalankar located?", "What is the address of Vidyalankar?", "Is Vidyalankar in Mumbai?", "How can I reach Vidyalankar?"],
+                "responses": ["Vidyalankar is located in Wadala (East), Mumbai - 400037"],
+                "context": [""]
+            },
+            {
+                "tag": "courses_offered",
+                "patterns": ["What courses does Vidyalankar offer?", "Can you list the courses available?", "What are the degrees I can pursue at Vidyalankar?", "What subjects can I study?"],
+                "responses": ["Vidyalankar offers a variety of courses including B.Sc. in Information Technology, B.Sc. in Data Science, Bachelor of Management Studies, and various Master's degrees such as M.Sc. in Information Technology and M.Com in Banking & Finance."],
+                "context": [""]
+            },
+            {
+                "tag": "bsc_data_science_details",
+                "patterns": ["Tell me about the B.Sc. in Data Science program.", "What does the B.Sc. Data Science course cover?", "How long is the B.Sc. Data Science course?", "What are the subjects in B.Sc. Data Science?", "Tell me about the bscds program.", "What does the bscds course cover?", "How long is the bscds course?", "What are the subjects in BscDs Science?"],
+                "responses": ["The B.Sc. in Data Science is a 3-year program with a focus on statistics, machine learning, and data mining. Subjects include Artificial Intelligence, Data Warehousing, and Big Data, among others."],
+                "context": [""]
+            },
+            {
+                "tag": "bsc_it_details",
+                "patterns": ["What is the B.Sc. in Information Technology about?", "Can you explain the B.Sc. IT curriculum?", "What topics are covered in the B.Sc. IT course?", "How long is the B.Sc. IT course?","What is the bscit about?", "Can you explain the bscit curriculum?", "What topics are covered in the bscit course?", "How long is the bscit course?" ],
+                "responses": ["The B.Sc. in Information Technology is a 3-year program covering topics like programming, computer networks, and software engineering. Key subjects include Python Programming, Database Management Systems, and Cyber Laws."],
+                "context": [""]
+            },
+            {
+                "tag": "admission_criteria",
+                "patterns": ["What are the admission requirements for B.Sc. Data Science?", "How can I get into the B.Sc. IT program?", "Do I need any specific qualifications for admission?"],
+                "responses": ["For the B.Sc. Data Science program, candidates need to have completed H.S.C. with a minimum of 40%. For B.Sc. IT, a minimum of 45% is required in one sitting with Mathematics as a subject."],
+                "context": [""]
+            },
+            {
+                "tag": "master_courses",
+                "patterns": ["What master's programs does Vidyalankar offer?", "Can you tell me about the M.Sc. and M.Com courses?", "What are the requirements for Master's admission?", "What subjects can I study in a Master's program?"],
+                "responses": ["Vidyalankar offers several Master's programs including M.Sc. in Information Technology and M.Com in various specializations. Admission requires a bachelor's degree with a minimum of 45% marks."],
+                "context": [""]
+            },
+            {
+                "tag": "course_duration",
+                "patterns": ["How long does the B.Sc. Data Science course take?", "What is the duration of the Master's programs?", "How many years for the B.Com courses?", "What is the length of B.Sc. IT program?"],
+                "responses": ["Most undergraduate courses, including B.Sc. Data Science and B.Sc. IT, have a duration of 3 years. Master's programs typically take 2 years to complete."],
+                "context": [""]
+            },
+            {
+                "tag": "bcom_details",
+                "patterns": ["What are the B.Com courses available?", "Can you list the specializations in B.Com?", "What subjects are taught in B.Com?", "How long does the B.Com program take?"],
+                "responses": ["Vidyalankar offers B.Com in Accounting & Finance, Banking & Insurance, and Financial Markets, each with a duration of 3 years. Subjects vary by specialization."],
+                "context": [""]
+            },
+            {
+                "tag": "msc_it_details",
+                "patterns": ["What is covered in the M.Sc. in Information Technology?", "Can you tell me about the M.Sc. IT curriculum?", "What subjects do I study in M.Sc. IT?", "How long is the M.Sc. IT program?"],
+                "responses": ["The M.Sc. in Information Technology is a 2-year program that covers advanced topics in IT. Subjects include Advanced Programming, Cloud Computing, and Data Security."],
+                "context": [""]
+            },
+            {
+                "tag": "online_resources",
+                "patterns": ["Are there any online resources for courses?", "How can I access course materials online?", "Is there a website for Vidyalankar courses?", "Can I find syllabus details online?"],
+                "responses": ["Vidyalankar provides access to course materials and resources through their website, which includes detailed syllabi and updates on courses offered."],
+                "context": [""]
+            },
+            {
+                "tag": "course_electives",
+                "patterns": ["What electives can I choose in the B.Sc. Data Science program?", "Are there elective subjects in the B.Sc. IT course?", "What options do I have for electives?", "Can I select subjects in my degree program?"],
+                "responses": ["In the B.Sc. Data Science program, students can choose electives such as Financial Analytics and Social Media Analytics. The B.Sc. IT course also offers various electives tailored to industry needs."],
+                "context": [""]
+            },
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+       
+            {
+                "tag": "feedback",
+                "patterns": ["I have feedback", "Can I give you some feedback?", "How do I give feedback?", "I want to report an issue"],
+                "responses": ["We appreciate your feedback! Please share your thoughts.", "Your feedback is important to us. What would you like to say?"],
+                "context": [""]
+            },
+            {
+                "tag": "help",
+                "patterns": ["I need help", "Can you assist me?", "Help me out", "I need support"],
+                "responses": ["Sure! What do you need help with?", "I'm here to help! Please let me know your issue."],
+                "context": [""]
+            },
+            {
+                "tag": "laboratories_info",
+                "patterns": ["What facilities are available in the laboratories?", "Can you tell me about the laboratories at Vidyalankar?", "Are there separate labs for undergraduate and postgraduate students?", "How many computers are in the computer labs?"],
+                "responses": ["Vidyalankar has well-equipped laboratories for both undergraduate and postgraduate students, with a total of 350 computers in the computer laboratories and adequate kits in electronic laboratories for practical work."],
+                "context": [""]
+            },
+            {
+                "tag": "students_activity_centre",
+                "patterns": ["What is the Students' Activity Centre?", "What activities are organized by the Students' Activity Centre?", "How can I get involved in activities at Vidyalankar?", "Is there a center for student activities?"],
+                "responses": ["The Students' Activity Centre provides a wide range of services and activities, promoting community involvement among students and staff. It also features an internal website with information about upcoming events and opportunities to engage in social activities."],
+                "context": [""]
+            },
+            {
+                "tag": "library_info",
+                "patterns": ["What resources does the library offer?", "Can I access e-journals at the library?", "What are the facilities available in the library?", "Does the library have internet access?"],
+                "responses": ["The library at Vidyalankar offers an extensive collection of technical books, academic journals, and internet terminals for online access. It also has areas for group work and silent study, along with e-journals like EBSCO and IEEE Explore."],
+                "context": [""]
+            },
+            {
+                "tag": "auditorium_seminar_halls",
+                "patterns": ["How many seminar halls does Vidyalankar have?", "What is the capacity of the auditorium?", "Can you tell me about the seminar halls?", "What facilities are available for events?"],
+                "responses": ["Vidyalankar features an auditorium with a capacity of approximately 300 persons and six seminar halls, each accommodating around 100 people, all equipped with state-of-the-art amenities."],
+                "context": [""]
+            },
+            {
+                "tag": "sports_facilities",
+                "patterns": ["What sports facilities are available at Vidyalankar?", "Are there indoor and outdoor games?", "Can I play football and cricket on campus?", "What kind of sports activities does Vidyalankar offer?"],
+                "responses": ["The institute provides facilities for both indoor and outdoor games, including two playgrounds for football and cricket. Indoor games such as chess, carrom, and table tennis are also available, along with special summer camps for sports training."],
+                "context": [""]
+            },
+            {
+                "tag": "cafeteria_info",
+                "patterns": ["What does the cafeteria offer?", "Are there food options for different tastes?", "How is the cleanliness maintained in the cafeteria?", "Is there a cafeteria on campus?"],
+                "responses": ["Vidyalankar has cafeterias with ample space offering a variety of food items to cater to different tastes. The institute prioritizes cleanliness and hygiene in these areas."],
+                "context": [""]
+            },
+            {
+                "tag": "print_facility",
+                "patterns": ["What is the V Print facility?", "Can students print from anywhere?", "How does the printing system work?", "Is there a print facility on campus?"],
+                "responses": ["The V Print facility at Vidyalankar is an automated in-house printing system that allows students to issue print commands from virtually anywhere at affordable prices."],
+                "context": [""]
+            },
+            {
+                "tag": "digital_library",
+                "patterns": ["What is V Refer?", "Can I access video lectures online?", "How does the digital library work?", "What resources are available in the digital library?"],
+                "responses": ["V Refer is a digital library that enables users to access video lectures, presentations, and documents. It allows users to have a personal briefcase to store and share resources with others."],
+                "context": [""]
+            },
+            {
+                "tag": "academic_networking",
+                "patterns": ["Does Vidyalankar have an academic social networking portal?", "How can I access the academic portal?", "What features does the academic portal offer?", "Can I find an app for the academic portal?"],
+                "responses": ["Vidyalankar has its own academic social networking portal that attracts over 150,000 hits per day. It includes features for students to connect, and there is also an Android application available on the Google Play Store."],
+                "context": [""]
+            },
+            {
+                "tag": "alumni_committee_info",
+                "patterns": ["What is the purpose of the Alumni Committee?", "How does the Alumni Committee support the institute?", "Why was the Alumni Committee created?", "What role does the Alumni Committee play?"],
+                "responses": ["The Alumni Committee aims to establish contact with alumni who support the welfare of the institute and promote its traditions and goals both locally and globally."],
+                "context": [""]
+            },
+            {
+                "tag": "entrepreneurship_committee_info",
+                "patterns": ["What does the Entrepreneurship Development Committee do?", "How does the committee help students become entrepreneurs?", "What skills does the Entrepreneurship Committee focus on?", "Why is the Entrepreneurship Committee important?"],
+                "responses": ["The Entrepreneurship Development Committee identifies and nurtures skills required for entrepreneurship in students, providing solutions that create a sustainable economy and significant value for individuals and communities."],
+                "context": [""]
+            },
+            {
+                "tag": "quality_assurance_committee_info",
+                "patterns": ["What is the role of the Quality Assurance Committee?", "How does the committee help students with projects?", "What skills does the Quality Assurance Committee aim to develop?", "Why is quality assurance important in projects?"],
+                "responses": ["The Quality Assurance Committee ensures that students prepare meaningful and useful projects, focusing on inculcating project handling skills."],
+                "context": [""]
+            },
+            {
+                "tag": "food_beverages_committee_info",
+                "patterns": ["What is the Food & Beverages Committee responsible for?", "How does the committee ensure food quality?", "What issues does the Food & Beverages Committee address?", "Why is the Food & Beverages Committee important?"],
+                "responses": ["The Food & Beverages Committee ensures access to wholesome food on campus and monitors the cafeteria and kitchen for cleanliness, pricing, variety, and meal plans."],
+                "context": [""]
+            },
+            {
+                "tag": "anti_ragging_committee_info",
+                "patterns": ["What is the purpose of the Anti-Ragging Committee?", "How does the Anti-Ragging Committee address ragging?", "Why is the Anti-Ragging Committee necessary?", "What measures are taken against ragging?"],
+                "responses": ["The Anti-Ragging Committee is established to combat ragging, which is a punishable offense under law, and implements strict measures as directed by the Supreme Court."],
+                "context": [""]
+            },
+            {
+                "tag": "industry_institute_interaction_info",
+                "patterns": ["What does the Industry Institute Interaction Committee do?", "How does this committee help prepare students for jobs?", "What is the focus of the Industry Institute Interaction Committee?", "Why is industry interaction important for students?"],
+                "responses": ["The Industry Institute Interaction Committee designs effective curricula that prepare students for jobs in multinational companies, exposing them to the latest technologies and practical methodologies."],
+                "context": [""]
+            },
+            {
+                "tag": "laboratory_development_committee_info",
+                "patterns": ["What is the Laboratory Development Committee's role?", "How does the committee improve laboratory facilities?", "What is aimed at by the Laboratory Development Committee?", "Why is laboratory development important?"],
+                "responses": ["The Laboratory Development Committee focuses on providing the best facilities in laboratories, fostering a research environment and creating Centers of Excellence in technology."],
+                "context": [""]
+            },
+            {
+                "tag": "library_committee_info",
+                "patterns": ["What is the purpose of the Library Committee?", "How does the Library Committee help improve library resources?", "What measures does the Library Committee suggest?", "Why is the Library Committee important?"],
+                "responses": ["The Library Committee assists in developing operational procedures, suggesting improvements for library resources, and formulating policies to optimize library use and encourage reading habits."],
+                "context": [""]
+            },
+            {
+                "tag": "parent_interaction_committee_info",
+                "patterns": ["What is the aim of the Parent Interaction Committee?", "How does the committee involve parents in student development?", "What role do parents play according to the committee?", "Why is parent interaction important?"],
+                "responses": ["The Parent Interaction Committee provides a forum for parents and teachers to exchange feedback and collaboratively motivate students to excel in their efforts."],
+                "context": [""]
+            },
+            {
+                "tag": "personality_enrichment_committee_info",
+                "patterns": ["What does the Personality Enrichment Committee do?", "How does the committee help with personal development?", "What skills does the Personality Enrichment Committee focus on?", "Why is personality development important?"],
+                "responses": ["The Personality Enrichment Committee organizes courses on soft skills and grooming to help individuals enhance their life and career, focusing on skills like team-building and confidence building."],
+                "context": [""]
+            },
+            {
+                "tag": "placement_committee_info",
+                "patterns": ["What is the role of the Placement Committee?", "How does the committee assist with job placements?", "What activities does the Placement Committee organize?", "Why is placement support important for students?"],
+                "responses": ["The Placement Committee facilitates employer interactions, organizes placement activities on campus, and provides pre-placement training to equip students with necessary skills for recruitment. Students are placed in companies like Wipro, Sutherland, Motilal Oswal Investment Services, KSSBI, Health Quality Practices, Bajaj Allianz, 63 moons, TCS, Tata Consultancy Services, GEP, HDFC Bank, Spiders, Reliance, Skill Camper, KPCM & CO., Byju's, ImpactGuru, Airtel, ICICI Bank, LTIMindtree, and many more."],
+                "context": [""]
+            },
+            {
+                "tag": "career_counseling_committee_info",
+                "patterns": ["What does the Career Counseling Committee do?", "How does the committee assist students in their careers?", "What areas does the Career Counseling Committee focus on?", "Why is career counseling important?"],
+                "responses": ["The Career Counseling Committee provides guidance for students' professional, academic, ethical, and personal development, aiming to improve institutional effectiveness by integrating training courses into the curriculum."],
+                "context": [""]
+            },
+            {
+                "tag": "students_council_committee_info",
+                "patterns": ["What is the role of the Students' Council Committee?", "How does the committee promote student activities?", "What types of events does the Students' Council organize?", "Why is the Students' Council important for students?"],
+                "responses": ["The Students' Council Committee organizes co-curricular and extracurricular activities, providing stress relief and engaging students in qualitative activities outside academic hours."],
+                "context": [""]
+            },
+            {
+                "tag": "marathi_vangmay_mandal_info",
+                "patterns": ["What does the Marathi Vangmay Mandal promote?", "How does the committee support Marathi culture?", "What activities does the Marathi Vangmay Mandal organize?", "Why is promoting Marathi literature important?"],
+                "responses": ["The Marathi Vangmay Mandal promotes and preserves Marathi literature, language, and culture, organizing programs to raise awareness about the importance of Marathi heritage among the younger generation."],
+                "context": [""]
+            },
+            {
+                "tag": "women_development_cell_info",
+                "patterns": ["What is the purpose of the Women Development Cell?", "How does the committee address women's issues?", "What activities are organized by the Women Development Cell?", "Why is promoting women's respect important?"],
+                "responses": ["The Women Development Cell promotes respect for women at the workplace, addressing issues through discussions, seminars, and workshops aimed at resolving challenges faced by working women."],
+                "context": [""]
+            },
+            {
+                "tag": "corporate_communication_committee_info",
+                "patterns": ["What is the role of the Corporate Communication Committee?", "How does the committee improve website accessibility?", "What does the Corporate Communication Committee manage?", "Why is corporate communication important for the institute?"],
+                "responses": ["The Corporate Communication Committee develops and updates the internal and external websites, enhancing accessibility and usability to benefit all members of the institution."],
+                "context": [""]
+            },
+            {
+                "tag": "grievance_redressal_committee_info",
+                "patterns": ["What is the purpose of the Grievance Redressal Committee?", "How does the committee handle complaints?", "What processes does the Grievance Redressal Committee ensure?", "Why is a grievance redressal system important?"],
+                "responses": ["The Grievance Redressal Committee ensures that all students and employees are aware of the complaint handling process, discussing and analyzing the causes of complaints to ensure just and fair resolutions."],
+                "context": [""]
+            },
+            {
+                "tag": "internal_complaint_committee_info",
+                "patterns": ["What does the Internal Complaints Committee address?", "How does the committee comply with the Sexual Harassment Act?", "What activities does the Internal Complaints Committee organize?", "Why is the Internal Complaints Committee important?"],
+                "responses": ["The Internal Complaints Committee is established according to the Sexual Harassment at Workplace Act and seeks to adhere to the guidelines to prevent, prohibit, and redress issues related to sexual harassment."],
+                "context": [""]
+            },
+            {
+                "tag": "placement_companies_info",
+                "patterns": ["Which companies do students get placed in?", "What companies offer placements?", "Tell me about the companies for placements", "Where do students get placed?", "What companies come for recruitment?"], 
+                "responses": ["Students at VSIT are placed at top companies including Wipro, Sutherland, Motilal Oswal Investment Services, KSSBI, Health Quality Practices, Bajaj Allianz, TCS, 63 Moons, GEP, HDFC Bank, Reliance Retail, ICICI Bank, LTIMindtree, Airtel, Byju's, Capgemini, and many more."], 
+                "context": [""]
+            },
+            {
+                "tag": "placement_statistics_info",
+                "patterns": ["What is the highest salary offered?", "What is the average salary for placements?", "Can you tell me the median salary of placements?", "Tell me about the salary packages offered", "What is the salary range for placements?"], 
+                "responses": ["The highest salary offered is Rs. 15.00 LPA, the average salary is Rs. 2.98 LPA, and the median salary is Rs. 3.00 LPA."], 
+                "context": [""]
+            },
+            {
+                "tag": "domain_wise_placement_info",
+                "patterns": ["What are the placement domains?", "Tell me about the domain-wise placements", "What fields do students get placed in?", "Which sectors hire students?", "What industries do students get placed in?"], 
+                "responses": ["Domain-wise placement statistics are as follows: Information & Technology - 34%, Data Science & Analytics - 26%, Finance & Accounting - 16%, Human Resources - 15%, Marketing & Sales - 5%, and others - 4%."], 
+                "context": [""]
+            },
+            {
+                "tag": "facilities",
+                "patterns": ["What facilities does Vidyalankar provide?", "Tell me about the facilities at the campus", "What amenities are available at Vidyalankar?", "Can you list the campus facilities?", "What are the facilities available at Vidyalankar?", "Facilities"], 
+                "responses": ["Vidyalankar provides various facilities such as a state-of-the-art library, well-equipped laboratories, sports facilities, a cafeteria, and digital learning resources.", "The campus offers a wide range of amenities including a modern library, fully equipped labs, a gym, and comfortable study spaces.", "Our facilities include a digital library, advanced labs, a sports complex, and a cafeteria for students.", "Vidyalankar offers a variety of student facilities such as a library, digital learning resources, a sports complex, and laboratories."], 
+                "context": [""]
+            },
+            {
+                "tag": "admission",
+                "patterns": ["What are the admission requirements?", "How can I apply for admission?", "Tell me about the admission process at Vidyalankar.", "What is the eligibility criteria for B.Sc. IT?", "How do I get admission to the B.Sc. IT program?", "What documents do I need for admission?"], 
+                "responses": ["To be eligible for admission to the B.Sc. IT program, candidates must have passed the XII standard examination with Mathematics and Statistics and secured at least 45% marks for the open category and 40% for reserved categories.", "Candidates can apply for admission by visiting the official Vidyalankar website and filling out the online application form. Make sure to check the eligibility criteria first.", "For B.Sc. IT, students need to have Mathematics and Statistics in their XII standard. Direct admission is available for diploma holders in relevant fields.", "You can apply online through the Vidyalankar website. Ensure you have all required documents ready."], 
+                "context": [""]
+            },
+            {
+                "tag": "faculty",
+                "patterns": ["Tell me about the faculty at Vidyalankar.", "What are the qualifications of the faculty members?", "Who is the head of the Information Technology department?", "How experienced are the faculty members?", "Can you share some information about the faculty?", "What specializations do the faculty have?"], 
+                "responses": ["The Department of Information Technology has experienced faculty members with specializations in Artificial Intelligence, Machine Learning, Cloud Computing, Software Engineering, and more.", "Asif Rampurawala is the Vice Principal and Head of the Department of B.Sc. IT. Many faculty members are also PhD guides.", "Our faculty consists of a mix of experienced and enthusiastic members, many of whom have published research papers and are involved in syllabus committees."], 
+                "context": [""]
+            },
+            {
+                "tag": "academics",
+                "patterns": ["What courses are offered at Vidyalankar?", "Tell me about the academic programs available.", "What degrees can I pursue at Vidyalankar?", "Can you list the academic programs?", "What is the structure of the B.Sc. IT program?"], 
+                "responses": ["Vidyalankar offers various undergraduate and postgraduate programs, including B.Sc. IT, M.Sc. IT, B.M.S, B.A.F, and more.", "The B.Sc. IT program is a three-year undergraduate course divided into six semesters.", "We offer diverse academic programs in IT, Commerce, Management, and Mass Media, catering to a wide range of student interests."], 
+                "context": [""]
+            },
+            {
+                "tag": "placements",
+                "patterns": ["What are the placement opportunities at Vidyalankar?", "Can you tell me about the placement process?", "How successful are students in placements?", "What companies visit for placements?", "What support does Vidyalankar provide for placements?"], 
+                "responses": ["Vidyalankar has strong linkages with industry and institutions, providing students with various internship and placement opportunities.", "The placement process involves resume workshops, mock interviews, and direct recruitment drives from top companies.", "Our students have secured placements in leading companies due to the robust support and training provided by the department."], 
+                "context": [""]
+            },
+            {
+                "tag": "events",
+                "patterns": ["What events are organized at Vidyalankar?", "Tell me about the upcoming events.", "What activities happen at Vidyalankar?", "Are there any workshops or seminars?", "How can I participate in events at Vidyalankar?"], 
+                "responses": ["Vidyalankar organizes various events, including hackathons, technical workshops, seminars, and guest lectures throughout the year.", "You can participate in events by registering through the official website or by contacting the department.", "We also have student chapters that facilitate technical activities and events regularly."], 
+                "context": [""]
+            },
+            {
+                "tag": "eminent_personalities",
+                "patterns": ["Who are some eminent personalities that have visited Vidyalankar?", "Tell me about the notable personalities associated with Vidyalankar.", "Can you list some eminent personalities who have interacted with students?", "What celebrities have been to Vidyalankar?", "Who are some guest speakers at Vidyalankar?"], 
+                "responses": ["Notable personalities who have interacted with Vidyalankar students include Mr. Kanwarjit Paintal (Bollywood Actor), Manini Mishra (Bollywood Actress), and Mr. Raghav Narsalay (Managing Director, Accenture Institute for High Performance).", "Prominent figures like Padma Shri Ujwal Nikam (Indian Public Prosecutor), Dr. Jagannath Patil (NAAC Advisor), and Ms. Neela Satyanarayana (Retired IAS Officer) have enriched our campus with their insights.", "Some other eminent guests include Mr. Mahesh Manjrekar (Actor, Director), Dr. Vijay Khole (Vice-Chancellor, Amity University), and Mr. Andreas Bauer (IMF Representative)."], 
+                "context": [""]
+            },
+            {
+                "tag": "faculty_achievements",
+                "patterns": ["What are some achievements of the faculty at Vidyalankar?", "Tell me about notable faculty accomplishments.", "Who are the faculty members recognized for their achievements?", "Can you share some faculty achievements at Vidyalankar?"], 
+                "responses": ["Dr. Rohini Kelkar and Mr. Asif Rampurawala hold a patent for an innovative virtual personal assistant, granted in April 2021.", "Dr. Rajendra Patil was selected for the Japan Patent Training Program and has been invited as a keynote speaker at several conferences.", "Dr. Swagatika Nanda received the AIMS-Jaipuria Outstanding Young Woman Management Research Award, while Dr. Sarika Chouhan was honored with the IEEE senior member grade.", "Several faculty members, including Dr. N. Lakshmi Kavitha and Ms. Pallavi Tawde, have been invited as resource persons for various academic programs."], 
+                "context": [""]
+            },
+            {
+                "tag": "academic_programs",
+                "patterns": ["What undergraduate programs are offered at Vidyalankar?", "Can you list the courses available at Vidyalankar?", "Tell me about the academic programs at Vidyalankar.", "What degrees can I pursue at Vidyalankar Institute of Technology?", "What postgraduate programs are available at Vidyalankar?"], 
+                "responses": ["Vidyalankar offers various undergraduate programs, including B.Sc. IT, B.M.S, B.Com (with specializations in Accounting, Banking, and Financial Markets), and B.B.I.", "The postgraduate offerings include M.Sc. IT, M.Com in Banking & Finance, and M.A. in Entertainment, Media & Advertising.", "In addition to UG and PG programs, Vidyalankar also offers doctoral programs (Ph.D.) in various disciplines."], 
+                "context": [""]
+            },
+            {
+                "tag": "eligibility",
+                "patterns": ["What are the eligibility criteria for the Bachelor of Commerce (Accounting and Finance) program?", "Can you tell me about the admission requirements for BCom Accounting and Finance?", "Who is eligible to apply for the BCom Accounting and Finance course at Vidyalankar?", "What qualifications do I need for the BCom degree?", "Are there specific marks required for admission to the BCom program?"], 
+                "responses": ["To be eligible for the Bachelor of Commerce (Accounting and Finance) degree course, a candidate must have passed the XII standard examination of the Maharashtra Board of Higher Secondary Education or its equivalent, securing not less than 45% marks in aggregate at the first attempt (40% for reserved category candidates).", "Every candidate admitted to the degree course must register with the University.", "For more detailed information, please refer to Circular No. UG/395 of 2004, dated 7th September 2004."], 
+                "context": [""]
+            },
+            {
+                "tag": "fees",
+                "patterns": ["What are the fees for the courses at Vidyalankar?", "Can you tell me about the fee structure?", "How much does it cost to study at Vidyalankar?", "What is the tuition fee for B.Sc. IT?", "Are there any additional fees I should know about?"], 
+                "responses": [ "You can find information about the fees by reaching out to us at the contact details below:", "Contact Us:\nVidyalankar School of Information Technology\nVidyalankar College Marg, Wadala (East),\nMumbai - 400037\n\nPhone: +91 22 2410 42 44\nEmail: principal@vsit.edu.in\n\nWe recommend visiting the college for the most accurate information."], 
+                "context": [""]
+            }                                                        
+   ]
+}
+
+
