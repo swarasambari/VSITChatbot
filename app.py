@@ -1,26 +1,29 @@
-from flask import Flask, request, jsonify
-import json
-import nltk
-from tensorflow.keras.models import load_model
-import numpy as np
-import random
+import os
+from flask import Flask, render_template, request, jsonify
 import pickle
+import numpy as np
+from tensorflow.keras.models import load_model
+import nltk
+from nltk.stem import WordNetLemmatizer
 
-# Load trained model and data
+# Initialize the Flask app
+app = Flask(__name__)
+
+# Load model and other necessary files
+lemmatizer = WordNetLemmatizer()
 model = load_model('chatbot_model.h5')
-intents = json.loads(open('intents.json').read())
+intents = pickle.load(open('intents.json', 'rb'))
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 
-app = Flask(__name__)
-
-# Preprocessing and prediction functions (same as your chatgui.py)
+# Define function to preprocess the user input
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
-    sentence_words = [word.lower() for word in sentence_words]
+    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
     return sentence_words
 
-def bow(sentence, words):
+# Convert user input into bag of words
+def bow(sentence, words, show_details=True):
     sentence_words = clean_up_sentence(sentence)
     bag = [0] * len(words)
     for s in sentence_words:
@@ -29,8 +32,9 @@ def bow(sentence, words):
                 bag[i] = 1
     return np.array(bag)
 
-def predict_class(sentence):
-    p = bow(sentence, words)
+# Predict the intent
+def predict_class(sentence, model):
+    p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
     ERROR_THRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
@@ -40,27 +44,25 @@ def predict_class(sentence):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
-def get_response(ints, intents_json):
-    tag = ints[0]['intent']
+# Get a response from the chatbot
+def get_response(intents_list, intents_json):
+    tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
-            result = random.choice(i['responses'])
-            break
-    return result
+            return i['responses']
 
-# Route to handle chatbot queries
+# Define Flask route to handle chat messages
+@app.route("/")
+def index():
+    return render_template("index.html")  # This will point to an HTML file for your frontend
+
 @app.route("/chat", methods=["POST"])
 def chat():
-    user_message = request.json.get("message")
-    ints = predict_class(user_message)
+    message = request.json["message"]
+    ints = predict_class(message, model)
     response = get_response(ints, intents)
     return jsonify({"response": response})
 
-# Home route to verify the API is working
-@app.route("/", methods=["GET"])
-def home():
-    return "VSIT Chatbot is up and running!"
-
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
